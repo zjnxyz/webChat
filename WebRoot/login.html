@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>login.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="jquery/jquery-1.6.2.js"></script>
+    
+   <script type="text/javascript">
+   $(document).ready(function(){  
+     
+      
+      $("#submit").click(
+    		  function(){
+    			  var id=$("#id").val();
+    		      var password=$("#password").val();
+    			  $.getJSON("login.action",
+    				   		{
+    				   	        id : id,
+    				   	        password: password
+    				   	        
+    				   		}, function(returnedData)
+    				   		{
+    				   			//alert("OBJ  "+returnedData[1].id);
+    				   			/*
+    				                var html="";
+    				                for(var i=0;i<returnedData.name.length;i++){  
+    				                   html+=returnedData.name[i] +returnedData.createTime[i] + "<br />";
+    				                }
+    				  
+    				   			   $("#show").append(html);
+    				   			 */ 
+    				   		}
+    				   		);    
+    			 
+    			}	  
+      );
+   
+   
+   });
+   
+   </script>
+
+  </head>
+  
+  <body>
+    
+        用户名：<input id="id" type="text"/><br>
+        密     码:<input id="password" type="password"><br>
+        <input id="submit" type="submit" value="登录">
+   <div id="show"></div>
+  </body>
+</html>

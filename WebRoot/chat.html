@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>caht.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link type="text/css" href="css/pepper-grinder/jquery-ui-1.8.18.custom.css" rel="stylesheet" />	
+    <link type="text/css"  href="css/demos.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery/jquery-1.6.2.js"></script>
+   <script type="text/javascript" src="jquery/jquery-ui-1.8.18.custom.min.js"></script>
+   <script type="text/javascript" src="jquery/chat2.js"></script>
+   
+   <script type="text/javascript" src="org/cometd.js"></script>
+    <script type="text/javascript" src="org/cometd/AckExtension.js"></script>
+    <script type="text/javascript" src="org/cometd/ReloadExtension.js"></script>
+   
+    <script type="text/javascript" src="jquery/json2.js"></script>
+    <script type="text/javascript" src="jquery/jquery.cookie.js"></script>
+    <script type="text/javascript" src="jquery/jquery.cometd.js"></script>
+    <script type="text/javascript" src="jquery/jquery.cometd-reload.js"></script>
+   
+    
+    
+   <script type="text/javascript">
+
+$(document).ready(function(){
+	
+	
+	   
+	   var config = {
+	            contextPath: (new String(document.location).replace(/http:\/\/[^\/]*/, '').replace(/\/jquery-examples\/.*$/, ''))
+	        };
+	   
+	});
+
+</script>
+   
+   <style type="text/css">
+      
+	  #loqin {
+		  font-size: 36px;
+	  }
+   
+   </style>
+   
+  </head>
+  
+  <body>
+      
+      <input id="altServer" type="hidden" value="http://127.0.0.1:8080/cometd/cometd" />
+       <div id="login" title="用户登录">
+         username:<input type="text" name="username" id="username" /><br />
+		 password:<input type="password" name="password" id="password" /><br />
+       </div>
+    	
+    	
+    	
+    	<fieldset id="chat"> 
+    	        <div id="frident"> 
+    	               
+    	        </div>
+    	        <div id="context">  
+    	        </div>
+    	         <div id="kz"><span id="from">### 说：</span><input id="msg" /><input type="submit" id="send_public" value="send"></div>
+    	</fieldset>
+   
+      <fieldset id="privateChat">
+           
+      </fieldset>
+   
+  </body>
+</html>

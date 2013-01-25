@@ -1,0 +1,89 @@
+
+#chat{
+	display: -webkit-box;
+	display: -moz-box;
+	}
+	
+#frident{
+	width: 200px;
+	height:500px;
+	padding: 5px;
+	float: left;
+    border: dashed 1px blue;
+    border-radius: 5px;
+	}
+	
+#context{
+	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+	border: solid  1px red;
+	border-radius: 5px;
+	margin-left:225px;
+	padding: 5px;
+	height: 500px;
+}
+#frident, #context{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	font-size: 1.5em;
+	overflow: auto;
+	
+}
+
+#kz{
+	margin-left: 235px;
+	margin-top: 10px;
+}
+
+#msg{
+	width: 400px;
+	height: 20px;
+}
+
+#privateChat{
+	display: -webkit-box;
+	display: -moz-box;
+	width: 500px;
+	height: 400px;
+	}
+	
+#private_img{
+	width: 150px;
+	height:375px;
+	float: left;
+	padding: 5px;
+    border: dashed 1px blue;
+    border-radius: 5px;
+	}
+	
+.privateContext{
+	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+	border: solid  1px red;
+	border-radius: 5px;
+	margin-left:160px;
+	padding: 5px;
+	height: 375px;
+	width:400px;
+	overflow: auto;
+}
+#privateContext, #private_img{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	font-size: 1.5em;
+	
+}
+
+
+#privateSend{
+	margin-left: 160px;
+	margin-top: 5px;
+}
+
+.privateMsg{
+	width: 400px;
+	height: 40px;
+}
+
+	
+
